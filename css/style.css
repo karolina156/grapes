@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: 
+    /* radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0), */
+    linear-gradient(90deg, transparent 60px, transparent 75px, #a4a4a4 75px, #a4cbe6 77px, transparent 77px, transparent 106px),
+    linear-gradient(180deg, transparent 60px, transparent 75px, #a4a4a4 75px, #a4cbe6 76px, transparent 77px, transparent 106px),
+  #fff;
+    background-size: 100px 100px, 100px 100px,100% 6px, 100px 100px, 100px 100px;
+    background-position: 37px 40px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'Overlock SC', cursive;
+    font-size: 1.1vw;
+    min-height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 2.4vw;
+    margin: 0; 
+    width: 100%;
+}
+
+.homepage-photo {
+    background: url("../img/grapik.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-right: 0.08em solid rgb(58, 40, 2);
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+
+    -webkit-box-shadow: inset -20px 0px 84px -39px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -20px 0px 84px -39px rgba(0,0,0,0.75);
+box-shadow: inset -20px 0px 84px -39px rgba(0,0,0,0.75);
+}   
+
+.homepage-photo > .logo-container {
+    margin: 0.5em 0 0 1.5em;
+    width: 25%;
+}
+
+.homepage-photo > .logo-container > .logo {
+    min-height: auto;
+    width: 100%;
+}
+
+.homepage-container-login {
+    background: url("../img/2.png"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+
+    -webkit-box-shadow: inset 20px 0px 84px -39px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 20px 0px 84px -39px rgba(0,0,0,0.75);
+box-shadow: inset 20px 0px 84px -39px rgba(0,0,0,0.75);
+
+
+}
+
+.homepage-container-login > p {
+    font-size: 1.6vw;
+    line-height: 2.5em;
+}
+
+.homepage-container-login > div {
+    margin: auto;
+    width: 80%;
+    margin-top: 20%;
+    
+}
+
+.homepage-container-login > div > a {
+    align-items: center;
+    /* background: linear-gradient(to right, rgb(184, 181, 185),rgb(120, 116, 121)); */
+    color: rgb(66, 19, 153);
+    display: flex;
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Just Me Again Down Here', cursive; */
+    font-weight: 400;
+    font-size: 4vw;
+    justify-content: center;
+    margin: 1.5em auto;
+    margin-bottom: 0.1em;
+    min-height: 50px;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    width: 80%;
+}
+
+.homepage-container-login > div > a:hover {
+    background: linear-gradient(to right, rgb(228, 240, 228),rgb(157, 201, 157));
+} 
+
+/* LOGIN & SIGN UP */
+.header-login {
+    font-family: 'Overlock SC', cursive;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.form-login-container {
+    background: radial-gradient(rgb(77, 189, 96), rgb(35, 80, 50)) ;
+    border-radius: 5em;
+    margin: 5em auto;
+    width: 50%;
+}
+
+.form-login {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1vw;
+    font-style: italic;
+    padding: 2em;
+}
+
+.form-login > .form-login-input {
+    border: 2px solid rgb(220, 221, 221);
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    width: 50%;
+}
+
+.form-login > .form-login-input:focus {
+    background: rgb(127, 219, 142);
+    border: 2px solid rgb(35, 80, 50);
+    outline-width: 0;
+}
+
+.button-submit {
+    background: linear-gradient(to right, rgb(184, 181, 185),rgb(120, 116, 121));
+    border-radius: 1em;
+    display: block;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin: 3em auto 0;
+    padding: 0.5em;
+    width: 15%;
+}   
+
+.button-submit:hover {
+    background: linear-gradient(to right, rgb(228, 240, 228),rgb(145, 197, 143));
+}
+
+.login-error-message {
+    color: rgb(240, 11, 11);
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding: 2em;
+    text-align: center;
+}
+
+/* NAVIGATION */
+
+.nav-main {
+    background: radial-gradient(rgb(77, 189, 96), rgb(35, 80, 50));
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+.nav-main > .nav-upper {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-upper-item {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-upper-item > a {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-size: 1.1vw;
+    flex: 3;
+    padding: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nav-upper-item a:hover {
+    background:rgb(127, 219, 142);
+    cursor: pointer;
+}
+
+.nav-upper-item > .profile-submenu {
+    background: radial-gradient(rgb(77, 189, 96), rgb(35, 80, 50));
+    display: none;
+}
+
+.nav-upper-item:last-child:hover > .profile-submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-upper-item > .profile-submenu a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 0.8vw;
+    padding: 1em;
+    text-decoration: none;
+    top: 0;
+}
+
+.page-header {
+    background: radial-gradient(rgb(186, 214, 247), rgb(237, 243, 250));
+    font-family: 'Baloo Bhai 2', cursive;
+    min-height: 200px;
+    margin: 2em auto;
+    width: 90%;
+}
+
+/* ICONS */
+
+.fa-caret-down {
+    font-size: 0.8vw;
+    position: relative;
+    top: 0.3em;
+    left: 0;
+}
+
+/* courses-site: */
+
+.add-courses {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2vw;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+/* addCourses-Site */
+
+.add-courses-container {
+    width: 100%;
+}
+
+.add-courses-table {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 1em auto;
+    padding: 1em;
+    width: 60%;
+}
+
+.add-courses-table > tr {
+    width: 100%;
+}
+
+.add-courses-table > tbody > tr > td:first-child {
+    border-right: 3px solid rgb(35, 80, 50);
+}
+
+.add-courses-table label:hover{
+    cursor: pointer;
+}
+
+.add-courses-table-items {
+    background: radial-gradient(rgb(186, 214, 247), rgb(237, 243, 250));
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: 0.2em;
+    width: 50%;
+    
+}
+
+/* grades */
+
+.container-grades {
+width: 100%;
+}
+
+/* .table-grades {
+    width: 100%; 
+} */
+
+.table-grades-items {
+    background: radial-gradient(rgb(186, 214, 247), rgb(237, 243, 250));
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: 0.2em;
+    width: 33.3%;
+}
+
+
+/* zajecia page */
+
+.options {
+padding-top: 5em;
+}
